@@ -5,8 +5,6 @@
     font-family: sans-serif;
 }
 
-body {}
-
 .container {
     margin: 80px auto;
     max-width: 640px;
@@ -18,7 +16,6 @@ form {
 }
 
 input,
-textarea,
 button {
     display: block;
     padding: 8px;
@@ -51,6 +48,13 @@ button:hover {
 
 .error-message {
     background-color: red;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
+
+/*.error-message {
+    background-color: red;
     padding: 8px;
     color: #fff;
     margin-bottom: 8px;
@@ -62,4 +66,4 @@ input .error {
     color: red;
     border-color: red;
     outline-color: red;
-}
+}*/

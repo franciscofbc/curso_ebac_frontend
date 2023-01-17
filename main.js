@@ -1,4 +1,34 @@
-const form = document.getElementById("form-deposito")
+const form = document.getElementById("form")
+const valorA = document.getElementById("valor-a")
+const valorB = document.getElementById("valor-b")
+const mensagemSucesso = "Formulário válido"
+const mensagemInsucesso = "Formulário inválido"
+const containerMensagemInsucesso = document.querySelector(".error-message")
+const containerMensagemSucesso = document.querySelector(".sucess-message")
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (valorA.value >= valorB.value) {
+        containerMensagemInsucesso.innerHTML = mensagemInsucesso
+        containerMensagemInsucesso.style.display = "block"
+        containerMensagemSucesso.style.display = "none"
+    } else {
+        containerMensagemSucesso.innerHTML = mensagemSucesso
+        containerMensagemSucesso.style.display = "block"
+        containerMensagemInsucesso.style.display = "none"
+        limparForm(valorA, valorB)
+    }
+})
+
+function limparForm(a, b) {
+    a.value = ""
+    b.value = ""
+
+}
+
+
+/*const form = document.getElementById("form-deposito")
 const nomeBeneficiario = document.getElementById("nome-beneficiario")
 let formEValido = false
 
@@ -12,6 +42,7 @@ function limparForm(a, b, c) {
     b.value = ""
     c.value = ""
 }
+
 
 form.addEventListener("submit", function (e) {
     e.preventDefault(); //Não executa a função do submit do botão
@@ -41,4 +72,4 @@ nomeBeneficiario.addEventListener("keyup", function (e) {
         nomeBeneficiario.classList.remove("error")
         document.querySelector(".error-message").style.display = "none"
     }
-})
+})*/
