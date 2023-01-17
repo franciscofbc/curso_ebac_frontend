@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 .container {
@@ -21,7 +21,6 @@ button {
     padding: 8px;
     margin-bottom: 8px;
     width: 100%;
-    resize: none;
 }
 
 button {
@@ -29,9 +28,7 @@ button {
     border: none;
     text-transform: uppercase;
     color: #fff;
-    font-weight: bold;
     font-size: 18px;
-    font-style: italic;
     cursor: pointer;
 }
 
@@ -52,18 +49,3 @@ button:hover {
     color: #fff;
     display: none;
 }
-
-/*.error-message {
-    background-color: red;
-    padding: 8px;
-    color: #fff;
-    margin-bottom: 8px;
-    font-size: 12px;
-    display: none;
-}
-
-input .error {
-    color: red;
-    border-color: red;
-    outline-color: red;
-}*/
