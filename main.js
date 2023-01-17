@@ -14,7 +14,7 @@ function limparForm(a, b, c) {
 }
 
 form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); //Não executa a função do submit do botão
 
     const numeroConta = document.getElementById("numero-conta")
     const valorDeposito = document.getElementById("valor-deposito")
