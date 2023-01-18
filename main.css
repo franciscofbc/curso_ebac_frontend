@@ -28,6 +28,7 @@ form {
     padding: 24px 0;
     /*Centraliza o que está dentro do form*/
     text-align: center;
+    display: none;
 }
 
 form h2 {
@@ -51,4 +52,53 @@ button {
 
 #botao-cancelar {
     background-color: red;
+}
+
+ul {
+    /*um ao lado do outro*/
+    display: flex;
+    /*limite de tela: cria nova linha*/
+    flex-wrap: wrap;
+}
+
+/*limitar tamanho do itens da listagem*/
+ul li {
+    /*quatro itens por linha. largura max 25%. img continua extrapolando area*/
+    max-width: 25%;
+
+    list-style: none;
+    /*li: elemento pai
+    para overlay-imagem-link nao vazar*/
+    position: relative;
+    max-height: 200px;
+    /*conteudo que extrapolar o limite max-height sera cortado*/
+    overflow-y: hidden;
+}
+
+ul li img {
+    /*imagem ocupara 100% da area*/
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /*posicionar no canto inferior do li*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*ocultar barra para mostrar apenas quando passar o mouse*/
+    opacity: 0;
+    /*transicao para exibicao*/
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
 }
