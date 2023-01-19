@@ -1,14 +1,19 @@
 $(document).ready(function () {
-
     $("form").on("submit", function (e) {
         e.preventDefault()
 
-        const nomeTarefa = $("#nome-tarefa").val()
+        const inputNomeTarefa = $("#nome-tarefa").val()
+        const novaTarefa = $(`<li>${inputNomeTarefa}</li>`)
 
-        const novoItem = $(`<li>${nomeTarefa}</li>`)
-        $(novoItem).appendTo("ul")
+        $(novaTarefa).appendTo("ul")
 
         $("#nome-tarefa").val("")
-    })
 
+        $("li").click(function () {
+         /*    const teste = document.getElementsByClassName("riscado")
+            console.log(teste) */
+
+            $(this).addClass("riscado")
+        })
+    })
 })
