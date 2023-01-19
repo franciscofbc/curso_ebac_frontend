@@ -10,8 +10,8 @@ $(document).ready(function () {
         $("#nome-tarefa").val("")
 
         $("li").click(function () {
-         /*    const teste = document.getElementsByClassName("riscado")
-            console.log(teste) */
+            /*const teste = document.getElementsByClassName("riscado")
+            console.log(teste)*/
 
             $(this).addClass("riscado")
         })
