@@ -9,196 +9,59 @@
 
 }
 
-html {
-    overflow-x: hidden;
-    /*conteudo que ultrapassar tamanho 
-    tela na horizontal nao sera visivel*/
-}
-
 .container {
     max-width: 1024px;
     width: 100%;
-    /*ocupar toda a largura*/
-
-    margin: 0 auto;
     /*centralizar horizontal*/
+    margin: 0 auto;
 }
 
-header,
-footer {
-    background-color: #192a56;
-    padding-top: 16px;
-    color: #fff;
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    /*devera ficar na extremidade superior*/
-    left: 0;
-    /*a extrema esquerda*/
-
-    z-index: 1;
-    /*prioridade sobre carousel*/
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
 }
 
-header>.container,
-footer>.container {
-    /*container >filho direto do header*/
-
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-
-nav {
-    background-color: #575fcf;
-    padding: 16px 0;
+.submenu {
     display: none;
+    /*  display: block; */
+  border:1px solid red;
+    /*para nao deslocar menu*/
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
 }
 
-
-
-nav li {
+.menu>li {
+    float: left;
     list-style: none;
-    display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
 }
 
-nav li a {
-    color: #fff;
-    text-decoration: none;
+.clear {
+    /*precisa por causa do float left*/
+    clear: both;
 }
 
-.menu-hamburguer {
-    width: 32px;
-    /*largura*/
-    cursor: pointer;
-
-}
-
-.menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    /*ocupara 100%*/
-    background-color: #fff;
+.menu li:hover .submenu {
     display: block;
-    /*span por padrao display inline*/
-    margin-bottom: 4px;
-}
-
-.container-flex {
-    display: flex;
 
 }
 
-#sobre-a-loja img {
-    max-width: 400px;
-    margin-right: 24px;
-
+.menu li:hover {
+     border-color: red;
+    /* border-top: 4px solid red; */
 }
 
-section {
-    padding: 48px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-.lista-veiculos {
-    flex-wrap: wrap;
-}
-
-.lista-veiculos li {
-    list-style: none;
-    /*remocao potinho */
-
-    max-width: 30%;
-    /*limitar tamanho do 
-    item da lista*/
-    margin-bottom: 24px;
-}
-
-.lista-veiculos li img {
-    max-width: 100%;
-}
-
-.lista-veiculos h3 {
-    margin: 16px 0;
-}
-
-.item-central {
-    margin: 0 5%;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    border: none;
-    background-color: #119759;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.price {
-    display: block;
-    /*strong padrao inline*/
-
-    margin: 16px 0;
-}
-
-.price del {
-    color: #ccc;
-    font-size: 14px;
-}
-
-.form-campo {
-    margin-bottom: 16px;
-}
-
-.form-campo label {
-    font-weight: bold;
-    display: block;
-    /*label padrao inlne*/
-}
-
-.form-campo input,
-.form-campo textarea {
-    width: 100%;
+.submenu li {
     display: block;
     padding: 8px;
-}
-
-.form-campo textarea {
-    resize: none;
-    height: 120px;
-}
-
-form {
-    /*form ocupara max 360px*/
-    max-width: 360px;
-}
-
-form button {
-    max-width: 120px;
-}
-
-footer li {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer li img {
-    height: 32px;
 }
