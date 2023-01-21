@@ -3,9 +3,8 @@
     /*remove margem*/
     padding: 0;
     /*remove espacamento interno dos elementos*/
-
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -14,211 +13,66 @@
     width: 100%;
     /*centralizar horizontal*/
     margin: 0 auto;
+
+
+}
+
+header {
+    background-color: #406cd4;
+    color: #fff;
+    padding: 16px 0;
 }
 
 header .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-header {
-    padding: 16px 0 0;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 56px;
+header li {
+    display: inline;
+    margin-left: 16px;
 }
 
-.submenu {
-    display: none;
-    /*  display: block; */
-    border: 1px solid red;
-    /*para nao deslocar menu*/
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    width: 300px;
-    top: 100%;
+header a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.menu>li {
-    float: left;
-    list-style: none;
-    padding: 16px;
-    border-top: 4px solid transparent;
-    position: relative;
+#section-sobre,
+#section-produtos {
+    padding: 16px 0;
 }
 
-.clear {
-    /*precisa por causa do float left*/
-    clear: both;
-}
-
-.menu li:hover .submenu {
-    display: block;
-
-}
-
-.menu li:hover {
-    border-color: red;
-    /* border-top: 4px solid red; */
-}
-
-.submenu li {
-    display: block;
-    padding: 8px;
-}
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-
-}
-
-.noticia img {
-    max-width: 100%;
-}
-
-.destaque {
-    margin-bottom: 56px;
-}
-
-.destaque .noticia a {
+#section-sobre .container {
     display: flex;
-    font-size: 2em;
+    justify-content: space-between;
 }
 
-.destaque .noticia img {
-    margin-right: 8px;
+#section-sobre img {
+    padding-right: 16px;
 }
 
-section h2 {
-    margin-bottom: 32px;
+#section-sobre li {
+    display: inline;
 }
 
-aside {
-    padding-left: 40px;
+#section-produtos img {
+    padding-bottom: 5px;
 }
 
-aside .noticia {
-    margin-bottom: 24px;
+#section-produtos h2,
+#section-sobre h2 {
+    padding-bottom: 50px;
 }
 
-.noticias {
+#section-produtos button {
+    margin-top: 16px;
+}
+
+.produtos {
     display: grid;
-    /* grid-template-columns: 33.3% 33.3% 33.3%; */
-    /*qtd de vezes que vai se repetir*/
-    /*32,6 para termos espaco para espacamento 100-2=98/3=32,6*/
-    grid-template-columns: repeat(3, 32.6%);
+    grid-template-columns: (4, 24.25%);
     column-gap: 1%;
-    row-gap: 5%;
-}
-
-@media screen and (max-width:767px) {
-    .conteudo {
-        display: block;
-    }
-
-    .container {
-        /*90% da largura do dispositivo*/
-        max-width: 90%;
-    }
-
-
-
-    .destaque .noticia a {
-        display: block;
-        font-size: 1.5em;
-    }
-
-    .destaque .noticia img {
-        margin-right: 0px;
-    }
-
-    .noticias {
-        display: block;
-
-    }
-
-    .noticias .noticia {
-        margin-bottom: 32px;
-    }
-
-    aside {
-        padding-left: 0px;
-    }
-
-    header div.container {
-        /*flex por padrao trabalho com linha*/
-        flex-direction: column;
-    }
-
-    .submenu {
-        display: block;
-        width: 100%;
-        position: relative;
-        border: none;
-
-    }
-
-    .menu {
-        display: none;
-    }
-
-    /*     .menu,
-    .menu>li {
-        width: 100%;
-        display: block;
-    }
- */
-    .menu>li {
-        clear: both;
-        /* float: left;
-        list-style: none;
-        padding: 16px;
-        border-top: 4px solid transparent;
-        position: relative; */
-        /*  background-color: #333; */
-    }
-
-
-    .submenu li {
-        display: block;
-        padding: 8px;
-    }
-
-    .botao-menu {
-        display: flex;
-        justify-content: center;
-        margin-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .botao-menu button {
-        padding: 8px;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .container {
-        max-width: 90%;
-    }
-
-    .botao-menu {
-        display: none;
-    }
-
-    .destaque .noticia a {
-        font-size: 1.5em;
-    }
-
-    .noticias {
-        /*100-2=98/2=49*/
-        grid-template-columns: repeat(2, 49%);
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .botao-menu {
-        display: none;
-    }
+    /*    row-gap: 5%; */
 }
