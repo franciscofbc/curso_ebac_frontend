@@ -108,3 +108,54 @@ section h2 {
 .produtos .produto button:hover {
     background-color: #1a5fff;
 }
+
+
+@media screen and (max-width:640px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .article-sobre,
+    .produtos {
+        display: block;
+
+    }
+
+    .article-sobre img {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .produtos .produto img {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    .container {
+        width: 80%;
+    }
+
+    .article-sobre {
+        display: block;
+
+    }
+
+    .article-sobre img {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+    }
+
+    .produtos .produto img {
+        width: 100%;
+    }
+
+}
