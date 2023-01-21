@@ -4,7 +4,7 @@
     padding: 0;
     /*remove espacamento interno dos elementos*/
     box-sizing: border-box;
-
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -14,13 +14,6 @@
     /*centralizar horizontal*/
     margin: 0 auto;
 
-
-}
-
-header {
-    background-color: #406cd4;
-    color: #fff;
-    padding: 16px 0;
 }
 
 header .container {
@@ -29,50 +22,89 @@ header .container {
     align-items: center;
 }
 
-header li {
-    display: inline;
-    margin-left: 16px;
+header .container h1 {
+    font-style: italic;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#section-sobre,
-#section-produtos {
+header {
     padding: 16px 0;
+    background-color: #406cd4;
+    margin-bottom: 56px;
+    color: rgba(255, 255, 255, 0.788);
 }
 
-#section-sobre .container {
+.menu>li {
+    display: inline;
+    padding: 16px;
+
+}
+
+.menu>li a {
+    color: rgba(255, 255, 255, 0.788);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+.menu>li a:hover {
+    color: rgba(255, 255, 255, 0.575);
+}
+
+#section-sobre {
+    margin-bottom: 56px;
+
+}
+
+.article-sobre {
     display: flex;
     justify-content: space-between;
 }
 
-#section-sobre img {
-    padding-right: 16px;
+.article-sobre img {
+    margin-right: 16px;
 }
 
-#section-sobre li {
-    display: inline;
-}
+section h2 {
+    /*Espaçamento Sobre a loja 
+    Produtos*/
+    margin-bottom: 32px;
+    color: #406cd4;
+    font-style: italic;
+    border-bottom: 2px solid #406cd4;
+    padding-bottom: 20px;
 
-#section-produtos img {
-    padding-bottom: 5px;
-}
-
-#section-produtos h2,
-#section-sobre h2 {
-    padding-bottom: 50px;
-}
-
-#section-produtos button {
-    margin-top: 16px;
 }
 
 .produtos {
     display: grid;
-    grid-template-columns: (4, 24.25%);
+    grid-template-columns: repeat(4, 24.25%);
     column-gap: 1%;
-    /*    row-gap: 5%; */
+
+}
+
+.produtos .produto {
+    margin-bottom: 32px;
+}
+
+.produtos .produto a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.produtos .produto button {
+    margin-top: 10px;
+    background-color: #406cd4;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+
+    width: 100%;
+}
+
+.produtos .produto button:hover {
+    background-color: #1a5fff;
 }
