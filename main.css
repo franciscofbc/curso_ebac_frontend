@@ -5,3 +5,7 @@ time {
 .post {
     margin-bottom: 24px;
 }
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
