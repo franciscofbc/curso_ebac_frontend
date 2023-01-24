@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Carousel</h1>
+
+                <div id="carousel-exemplo" class="carousel slide carousel-fade post" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100 "
+                                src="https://cdn.pixabay.com/photo/2023/01/12/15/05/flamingo-7714344_960_720.jpg">
+                            <div class="carousel-caption">
+                                <h2>img1</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 "
+                                src="https://cdn.pixabay.com/photo/2017/08/05/22/29/gorilla-2586193_960_720.jpg">
+                            <div class="carousel-caption">
+                                <h2>img2</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 "
+                                src="https://cdn.pixabay.com/photo/2023/01/03/19/22/bird-7695209_960_720.jpg">
+                            <div class="carousel-caption">
+                                <h2>img3</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+
+                <div class="container g-0">
+                    <div class="row">
+                        <h1>Grid com cards</h1>
+                        <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <article class="card">
+                                <header class="card-header">
+                                    Header
+                                </header>
+                                <img
+                                    src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                        beatae sed a ullam porro repellendus placeat architecto vel corrupti?
+                                        Necessitatibus illo reiciendis dolore ad ea quos minima exercitationem aut
+                                        doloremque.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Footer
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <article class="card">
+                                <header class="card-header">
+                                    Header
+                                </header>
+                                <img
+                                    src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                        beatae sed a ullam porro repellendus placeat architecto vel corrupti?
+                                        Necessitatibus illo reiciendis dolore ad ea quos minima exercitationem aut
+                                        doloremque.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Footer
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <article class="card">
+                                <header class="card-header">
+                                    Header
+                                </header>
+                                <img
+                                    src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                        beatae sed a ullam porro repellendus placeat architecto vel corrupti?
+                                        Necessitatibus illo reiciendis dolore ad ea quos minima exercitationem aut
+                                        doloremque.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Footer
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <article class="card">
+                                <header class="card-header">
+                                    Header
+                                </header>
+                                <img
+                                    src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                        beatae sed a ullam porro repellendus placeat architecto vel corrupti?
+                                        Necessitatibus illo reiciendis dolore ad ea quos minima exercitationem aut
+                                        doloremque.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Footer
+                                </footer>
+                            </article>
+                        </div>
+                        <!--      <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <article class="card">
+                                <header class="card-header">
+                                    Desenvolvimento Web
+                                </header>
+                                <img src="https://via.placeholder.com/180x180">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cards do Bootstrap</h4>
+                                    <p class="card-text">Conheça os Cards do Bootstrap e suas variações.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em <time>10/08/2022 às 19:00</time>
+                                </footer>
+                            </article>
+                        </div> -->
+
+                        <!--  <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <div class="card text-bg-dark">
+
+                                <img
+                                    src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">titulo</h4>
+                                    <h5 class="card-subtitle">subtitulo</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Inventore, possimus amet? Vero rem fugiat quasi explicabo.</p>
+                                    <a href="#" class="btn btn-primary">button link</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!--  <div class="col-xs-12 col-sm-6 col-md-4 post">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    header
+                                </div>
+                                <img src="https://via.placeholder.com/180x180">
+                                <div class="card-body">
+                                    <h4 class="card-title">titulo</h4>
+                                    <h5 class="card-subtitle">subtitulo</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Inventore, possimus amet? Vero rem fugiat quasi explicabo, odit asperiores
+                                        exercitationem consectetur dolore minus, quis nulla error officiis. Eos nam
+                                        soluta iste.</p>
+                                    <a href="#" class="btn btn-primary">button link</a>
+                                </div>
+                            </div>
+                        </div>
+ -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
