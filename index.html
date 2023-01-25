@@ -9,137 +9,158 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <!-- sticky-top=cabecalho acompanha rolagem -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <!-- d-md-flex: a partir do md será display flex {propriedade}-{breakpoint}-{valor}-->
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <!-- fw-bold=font weight -->
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <!-- me=margem end=margem right -->
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Carousel</h1>
-
-                <div id="carousel-exemplo" class="carousel slide carousel-fade post" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div data-bs-interval="3000" class="carousel-item active">
-                            <img class="d-block w-100 "
-                                src="https://cdn.pixabay.com/photo/2023/01/12/15/05/flamingo-7714344_960_720.jpg">
-                            <div class="carousel-caption">
-                                <h2>img1</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000" class="carousel-item">
-                            <img class="d-block w-100 "
-                                src="https://cdn.pixabay.com/photo/2017/08/05/22/29/gorilla-2586193_960_720.jpg">
-                            <div class="carousel-caption">
-                                <h2>img2</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000" class="carousel-item">
-                            <img class="d-block w-100 "
-                                src="https://cdn.pixabay.com/photo/2023/01/03/19/22/bird-7695209_960_720.jpg">
-                            <div class="carousel-caption">
-                                <h2>img3</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
-                        type="button">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
-                        type="button">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
-                    </div>
-                </div>
-
-            </div>
+            </nav>
         </div>
 
+    </header>
 
-        <div class="row">
-            <h1>Grid com cards</h1>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 post">
-
-                <article class="card">
-                    <header class="card-header">
-                        Header
-                    </header>
-                    <img
-                        src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
-                    <div class="card-body">
-                        <h4 class="card-title">Title</h4>
-                        <h5 class="card-subtitle">Subtitle</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            beatae sed a ullam porro repellendus placeat architecto vel corrupti?
-                            Necessitatibus illo reiciendis dolore ad ea quos minima exercitationem aut
-                            doloremque.</p>
-                        <a href="#" class="btn btn-primary">Read more</a>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/slide1.png" alt="Espaço interno do restaurante">
                     </div>
-                    <footer class="card-footer">
-                        Footer
-                    </footer>
-                </article>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide3.png" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 post">
-                <div class="card text-bg-dark">
-                    <div class="card-header">
-                        header
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
+                                alt="Foto do espaço interno do restaurante">
+                        </div>
+
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad illo voluptate natus
+                                optio
+                                velit quod deleniti ipsam! Hic nobis tempora corrupti odit corporis natus asperiores
+                                illum
+                                ipsum voluptates amet?</p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid, omnis inventore
+                                ipsa
+                                incidunt qui vero dolores nobis nulla eos quibusdam quasi doloribus quisquam cupiditate
+                                fugit soluta facilis. Eius, ipsum?</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
                     </div>
-                    <img
-                        src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
-                    <div class="card-body">
-                        <h4 class="card-title">titulo</h4>
-                        <h5 class="card-subtitle">subtitulo</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Inventore, possimus amet? Vero rem fugiat quasi explicabo, odit asperiores
-                            exercitationem consectetur dolore minus, quis nulla error officiis. Eos nam
-                            soluta iste.</p>
-                        <a href="#" class="btn btn-primary">button link</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto explicabo quisquam,
+                            harum provident, cumque excepturi accusamus ipsa quos non esse itaque saepe eaque possimus
+                            omnis distinctio. Obcaecati, tempore reprehenderit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepção para casamentos
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto explicabo quisquam,
+                            harum provident, cumque excepturi accusamus ipsa quos non esse itaque saepe eaque possimus
+                            omnis distinctio. Obcaecati, tempore reprehenderit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto explicabo quisquam,
+                            harum provident, cumque excepturi accusamus ipsa quos non esse itaque saepe eaque possimus
+                            omnis distinctio. Obcaecati, tempore reprehenderit.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4 post">
-                <div class="card text-bg-dark">
-
-                    <img
-                        src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">titulo</h4>
-                        <h5 class="card-subtitle">subtitulo</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Inventore, possimus amet? Vero rem fugiat quasi explicabo.</p>
-                        <a href="#" class="btn btn-primary post">button link</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 post">
-                <div class="card text-bg-dark">
-
-                    <img
-                        src="https://media.istockphoto.com/id/92251238/pt/foto/plano-aproximado-de-empres%C3%A1rio-colocando-nome-de-marca.webp?s=1024x1024&w=is&k=20&c=mfBEGaSqzxOv3N2H5_ijowBYFL5NtEWoLT9rqKSUrPA=">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">titulo</h4>
-                        <h5 class="card-subtitle">subtitulo</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Inventore, possimus amet? Vero rem fugiat quasi explicabo.</p>
-                        <a href="#" class="btn btn-primary post">button link</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
