@@ -1,12 +1,12 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-color: #eee;
+  background-color: #f5f6fa;
 }
 
 .container {
@@ -16,63 +16,77 @@ body {
 }
 
 header {
-  padding: 16px 0;
-  background-color: #01a3a4;
-  text-align: center;
-  color: #fff;
+  background-color: #182C61;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-
-.form-container {
-  /*vh: altura viewport 
-  70px: altura do header*/
-  height: calc(100vh - 70px);
+header .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  max-width: 760px;
+  padding: 16px 0;
 }
-.form-container h2 {
-  font-size: 3em;
-  text-align: center;
+header .container .menu {
+  display: flex;
 }
-.form-container form {
-  max-width: 480px;
-  width: 100%;
-  margin-top: 40px;
-}
-.form-container form label {
+header .container .menu li {
   font-weight: bold;
-  cursor: pointer;
+  margin-left: 24px;
+  list-style: none;
 }
-.form-container form input {
-  padding: 8px;
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid #01a3a4;
-}
-.form-container form button {
-  padding: 8px;
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-  background-color: #00d2d3;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+header .container .menu li a {
   color: #fff;
-}
-.form-container form button:hover {
-  background-color: #21feff;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+section {
+  padding: 56px 0;
+}
+section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+section .products li {
+  list-style: none;
+}
+section .products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+section .products .product-item .product-button {
+  display: block;
+  background-color: #44bd32;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+section .products .product-item .product-button:hover {
+  background-color: #4fcc3d;
+}
+
+@media screen and (max-width: 1023px) {
   .container {
     max-width: 80%;
+  }
+  .container .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .products {
+    display: block;
+  }
+  .container .products .product-item {
+    margin-bottom: 32px;
   }
 }
 
