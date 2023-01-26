@@ -1,6 +1,5 @@
 body {
-      font-family: 'Roboto', sans-serif;
-    /* font-family: 'Roboto Flex', sans-serif; */
+    font-family: 'Rubik', sans-serif;
 }
 
 .navbar {
@@ -12,10 +11,7 @@ body {
     color: #343c3c;
 }
 
-#cabecalho .nav .nav-link,
-.navbar-brand,
-.navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
+#cabecalho .nav .nav-link {
     color: #fff;
 }
 
@@ -25,16 +21,13 @@ body {
 }
 
 .section-title {
-    /*   font-family: 'Pacifico', cursive; */
     font-weight: bold;
     text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-  /*   font-family: 'Roboto Flex', sans-serif; */
+
 }
 
 #sobre,
 #fale-conosco {
-    /*  background-color: #ffeae6; */
     background-color: #546c7c38;
 }
 
@@ -42,14 +35,9 @@ body {
     color: #044061;
 }
 
-.nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #343c3c;
+    background-color: #6c747c;
     color: #fff;
-}
-
-.nav-cardapio .nav-link:hover {
-    color: #343c3c;
 }
 
 .social-links li {
@@ -70,9 +58,6 @@ body {
 header img {
     height: 75px;
 }
-
-
-
 
 .post {
     margin-bottom: 24px;
