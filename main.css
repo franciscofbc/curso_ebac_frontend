@@ -1,14 +1,15 @@
 body {
-    font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Flex', sans-serif; */
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: #343c3c;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #e15f41;
+    color: #343c3c;
 }
 
 #cabecalho .nav .nav-link,
@@ -24,26 +25,31 @@ body {
 }
 
 .section-title {
-    font-family: 'Pacifico', cursive;
+    /*   font-family: 'Pacifico', cursive; */
+    font-weight: bold;
+    text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+  /*   font-family: 'Roboto Flex', sans-serif; */
 }
 
-#sobre-o-restaurante,
-#cardapio {
-    background-color: #ffeae6;
+#sobre,
+#fale-conosco {
+    /*  background-color: #ffeae6; */
+    background-color: #546c7c38;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: #044061;
 }
 
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #e15f41;
+    background-color: #343c3c;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
-    color: #e15f41;
+    color: #343c3c;
 }
 
 .social-links li {
@@ -59,4 +65,15 @@ body {
     .carousel-item img {
         height: 280px;
     }
+}
+
+header img {
+    height: 75px;
+}
+
+
+
+
+.post {
+    margin-bottom: 24px;
 }
